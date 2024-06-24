@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lucida+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Expense Tracker</h1>
-        <form id="expense-form">
-            <input type="text" id="expense-name" placeholder="Expense Name" required>
-            <input type="number" id="expense-amount" placeholder="Amount" required>
-            <button type="submit">Add Expense</button>
-        </form>
-        <ul id="expense-list"></ul>
-        <h2>Total: $<span id="total-amount">0</span></h2>
+        <input type="text" id="expenseName" placeholder="Expense Name">
+        <input type="number" id="expenseAmount" placeholder="Amount">
+        <button onclick="addExpense()">Add Expense</button>
+        <ul id="expenseList"></ul>
+        <div id="totalAmount">Total: $0</div>
     </div>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
